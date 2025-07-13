@@ -69,14 +69,15 @@ function App() {
       }}
     >
       <img
-        src="/logo.png"
-        alt="Mediva Logo"
-        style={{
-          height: "150px", // keep navbar height small
-          width: "auto",
-          padding:"0px 34px"
-        }}
-      />
+  src={`${process.env.PUBLIC_URL}/logo.png`}
+  alt="Mediva Logo"
+  style={{
+    height: "150px",
+    width: "auto",
+    padding: "0px 34px"
+  }}
+/>
+
     </a>
 
     {/* Toggle button for small screens */}
