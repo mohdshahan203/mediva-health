@@ -1,0 +1,67 @@
+/* App.css */
+
+body,
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar toggler icon color override */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 51, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Section headings */
+h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Paragraph spacing and line height */
+p {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Form labels styling */
+.form-label {
+  font-weight: 600;
+  color: #003300;
+}
+
+/* Button style overrides */
+button.btn {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Success alert font size */
+.alert-success {
+  font-size: 1.1rem;
+}
+@media (max-width: 991.98px) {
+  .custom-collapse {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .custom-collapse.show {
+    transform: translateX(0%);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
